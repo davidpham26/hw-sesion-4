@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, c;
+
+    // Yêu cau nguoi dùng nhap 3 canh
+    printf("Nhap canh thu nhat: ");
+    scanf("%f", &a);
+    printf("Nhap canh thu hai: ");
+    scanf("%f", &b);
+    printf("Nhap canh thu ba: ");
+    scanf("%f", &c);
+
+    // kiem tra dieu kien cua tam giac 
+    if (a > 0 && b > 0 && c > 0 && (a + b > c) && (a + c > b) && (b + c > a)) {
+        printf("Là 3 canh tam giác.\n");
+    } else {
+        printf("Không phai 3 canh tam giác.\n");
+    }
+
+    return 0;
+}
+
